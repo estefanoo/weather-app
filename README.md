@@ -1,5 +1,8 @@
 
 ## Weather App - React
 
+Tecnologias: HTML, CSS, REACT.
 
-https://estefanoo.github.io/weather-app/
+API: http://metaweather.com/
+
+mi pagina: https://estefanoo.github.io/weather-app/
