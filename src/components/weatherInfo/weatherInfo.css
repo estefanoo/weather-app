@@ -1,0 +1,126 @@
+/* //////////////
+    content right
+///////////////// */
+
+.weatherInfo{
+    background-color: #100e1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    padding: 20px 50px;
+    width: 70%;
+}
+
+/*//////////////////////////////
+    weathers next days 
+ //////////////////////////////*/
+
+.weatherInfo-week-cards{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.weatherInfo-week-card{
+    background-color: #1e213a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 100px;
+}
+
+.weatherInfo-week-card img{width: 50px;}
+
+.weatherInfo-week-card .numbers span{margin: 0 5px;}
+
+
+/*//////////////////////////////
+    weather today more info 
+ //////////////////////////////*/
+
+.weatherInfo-today{
+    height: auto;
+    width: 100%;
+}
+
+.weatherInfo-today-title{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.weatherInfo-today-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+}
+
+.weatherInfo-today-card{
+    align-items: center;
+    background-color:#1e213a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    margin-top: 10px;
+    width: 350px;
+}
+
+.weatherInfo-today-especific{
+    display: flex;
+    align-items: flex-end;
+}
+
+.weatherInfo-today-especific h4{font-size: 50px;}
+
+.weatherInfo-today-especific p{font-size: 30px;}
+
+
+@media screen and (max-width:1150px){
+
+    .weatherInfo-week-card{
+        height: 140px;
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .weatherInfo-today-card{
+        height: 150px;
+        width: 210px;
+    }
+}
+
+@media screen and (max-width:890px){
+
+    .weatherInfo-week-card{
+        height: 100px;
+        width: 70px;
+    }
+
+    .weatherInfo-week-card img{width: 25px;}
+    .weatherInfo-week-card p{font-size: 12px;}
+    .weatherInfo-week-card .numbers span{font-size: 12px;}
+
+    .weatherInfo-today-card{
+        height: 100px;
+        width: 150px;
+    }
+    .weatherInfo-today-especific h4{font-size: 30px;}
+    .weatherInfo-today-especific p{font-size: 20px;}
+}
+
+
+@media screen and (max-width:425px){
+    .weatherInfo{
+        height: auto;
+        width: 100%;
+    }
+}

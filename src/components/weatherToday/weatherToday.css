@@ -1,0 +1,114 @@
+/* ///////////////
+    Content Left
+//////////////// */
+
+.weatherToday{
+    align-items: center;
+    background-color: #1e213a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    width: 30%;
+}
+.weatherToday-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.weatherToday-button-ubication{
+    align-items: center;
+    background-color: #6e707a;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    transition: ease-in 2s;
+    width: 40px ;
+}
+
+.weatherToday-button-ubication:hover{border:1px solid white;}
+
+.weatherToday-button-ubication img{
+    height: 25px;
+    width: 25px ;
+}
+
+
+.weatherToday-info{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    text-align: center;
+}
+
+.weatherToday-info-temperature{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.weatherToday-info-temperature h1{
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.weatherToday-info img{width: 150px;}
+
+
+@media screen and (max-width:1150px){
+    /* img, text */
+    .weatherToday-info p, .weatherToday-info span{font-size: 12px;}
+    .weatherToday-info img{width: 100px;}
+    .weatherToday-info-temperature h1{font-size: 80px;}
+}
+
+
+@media only screen and (max-width:768px) and (min-width:426px){
+    /* img, text */
+    .weatherToday-info h2{font-size: 16px;}
+    .weatherToday-info p, .weatherToday-info span{font-size: 8px;}
+    .weatherToday-info img{width: 80px;}
+    .weatherToday-info-temperature h1{font-size: 50px;}
+
+    /* header */
+
+    .weatherToday-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .weatherToday-button-ubication{
+        margin-top: 10px;
+        height: 30px;
+        width: 30px ;
+    }
+
+    .weatherToday-button-ubication img{
+        height: 20px;
+        width: 20px ;
+    }
+}
+
+
+@media screen and (max-width:425px){
+    .weatherToday{
+        height: 100vh;
+        width: 100%;    
+    }
+
+    .weatherToday-buttons{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+}

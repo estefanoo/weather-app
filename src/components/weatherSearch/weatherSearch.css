@@ -1,0 +1,83 @@
+/* /////////////////
+       Search
+/////////////////// */
+
+.weatherSearch{
+    align-items: center;
+    background-color: #1e213a;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    left: 0;
+    transition: ease .4s;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    z-index: 1;
+}
+
+.weatherSearch-close{ 
+    cursor: pointer;
+    text-align: right;
+    width: 100%;
+}
+
+.weatherSearch-close span{
+    font-size: 30px;
+    padding: 5px 20px;
+}
+
+.weatherSearch-header{
+    padding: 10px 0;
+    width: 90%;
+}
+
+.weatherSearch-header form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weatherSearch-header form select{
+    background: none;
+    border: 1px solid #6e707a;
+    padding: 3% 5%;
+    color:#6e707a;
+}
+
+.weatherSearch-header form select .country{margin: 2px 0;}
+
+.weatherSearch-header form button{
+    background-color: #462fdf;
+    padding: 10px 10px;
+}
+
+.weatherSearch-cities{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+}
+
+.weatherSearch-cities button{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.weatherSearch-cities button:hover{border: 1px solid #6e707a;}
+
+.weatherSearch-cities button:hover::after{
+    content: '>';
+    color: #6e707a;
+}
+
+@media screen and (max-width:768px){
+    .weatherSearch-close span{font-size: 30px;}
+
+    .weatherSearch-header form{flex-direction: column;}
+}

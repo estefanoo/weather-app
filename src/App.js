@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
+import { WeatherToday } from './components/weatherToday/WeatherToday';
+import { WeatherInfo } from './components/weatherInfo/WeatherInfo';
+import {ApiContext} from './ApiContext';
+
+import './styles.css';
+
 
 function App() {
+
+  const [dataWeather, setDataWeather] = useState({
+    "weathers":null,
+    "city":null,
+    "zone":null,
+    "nextWeathers":null
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApiContext.Provider value={{
+      dataWeather,
+      setDataWeather
+    }}>
+
+      <div className="container">
+        <WeatherToday />
+        <WeatherInfo />
+      </div>
+
+    </ApiContext.Provider> 
   );
 }
 
